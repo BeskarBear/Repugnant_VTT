@@ -1,0 +1,30 @@
+{
+  "Actor": {
+    "types": ["dweller", "npc", "monster"],
+    "template": {
+      "attributes": {
+        "muscle": { "value": 0 },
+        "brains": { "value": 0 },
+        "vibes": { "value": 0 }
+      },
+      "carcass": {
+        "meat": { "value": 0, "max": 0 },
+        "feet": { "value": 0, "max": 0 }
+      },
+      "skuz": {
+        "magnitude": { "value": 0 },
+        "units": { "value": 0 }
+      },
+      "notes": ""
+    }
+  },
+  "Item": {
+    "types": ["kin", "mutation", "ability", "gear"],
+    "template": {
+      "description": "",
+      "skuzCost": 0,
+      "tags": "",
+      "effects": ""
+    }
+  }
+}

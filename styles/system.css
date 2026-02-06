@@ -1,0 +1,71 @@
+.repugnant {
+  font-family: "EB Garamond", "Garamond", "Times New Roman", serif;
+}
+
+.repugnant .sheet-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.repugnant .sheet-header .name {
+  flex: 1;
+  font-size: 1.4rem;
+}
+
+.repugnant .sheet-header .type {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+.repugnant .grid.two-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.repugnant .panel {
+  border: 1px solid #422;
+  padding: 10px;
+  background: #f7f2e8;
+}
+
+.repugnant .field {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.repugnant .field label {
+  font-weight: 600;
+}
+
+.repugnant .d6-roll {
+  margin-top: 8px;
+}
+
+.repugnant-chat {
+  font-family: "EB Garamond", "Garamond", "Times New Roman", serif;
+}
+
+.repugnant-chat .results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.repugnant-chat .die {
+  border: 1px solid #422;
+  padding: 2px 6px;
+  background: #f7f2e8;
+}
+
+.repugnant-chat .meta {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}

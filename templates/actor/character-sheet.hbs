@@ -1,0 +1,60 @@
+<form class="repugnant actor-sheet" autocomplete="off">
+  <header class="sheet-header">
+    <input class="name" name="name" type="text" value="{{actor.name}}" data-edit="name" />
+    <div class="type">{{actor.type}}</div>
+  </header>
+
+  <section class="sheet-body">
+    <div class="grid two-col">
+      <div class="panel">
+        <h3>Skuz</h3>
+        <div class="field">
+          <label>Magnitude</label>
+          <input type="number" name="system.skuz.magnitude.value" value="{{system.skuz.magnitude.value}}" />
+        </div>
+        <div class="field">
+          <label>Units</label>
+          <input type="number" name="system.skuz.units.value" value="{{system.skuz.units.value}}" />
+        </div>
+        <button type="button" class="d6-roll" data-action="d6-roll">D6 Check</button>
+      </div>
+
+      <div class="panel">
+        <h3>Attributes</h3>
+        <div class="field">
+          <label>Muscle</label>
+          <input type="number" name="system.attributes.muscle.value" value="{{system.attributes.muscle.value}}" />
+        </div>
+        <div class="field">
+          <label>Brains</label>
+          <input type="number" name="system.attributes.brains.value" value="{{system.attributes.brains.value}}" />
+        </div>
+        <div class="field">
+          <label>Vibes</label>
+          <input type="number" name="system.attributes.vibes.value" value="{{system.attributes.vibes.value}}" />
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Carcass</h3>
+        <div class="field">
+          <label>Meat</label>
+          <input type="number" name="system.carcass.meat.value" value="{{system.carcass.meat.value}}" />
+          <span>/</span>
+          <input type="number" name="system.carcass.meat.max" value="{{system.carcass.meat.max}}" />
+        </div>
+        <div class="field">
+          <label>Feet</label>
+          <input type="number" name="system.carcass.feet.value" value="{{system.carcass.feet.value}}" />
+          <span>/</span>
+          <input type="number" name="system.carcass.feet.max" value="{{system.carcass.feet.max}}" />
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Notes</h3>
+        <textarea name="system.notes" rows="6">{{system.notes}}</textarea>
+      </div>
+    </div>
+  </section>
+</form>

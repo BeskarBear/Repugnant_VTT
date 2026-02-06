@@ -1,0 +1,30 @@
+<form class="repugnant item-sheet" autocomplete="off">
+  <header class="sheet-header">
+    <input class="name" name="name" type="text" value="{{item.name}}" data-edit="name" />
+    <div class="type">{{item.type}}</div>
+  </header>
+
+  <section class="sheet-body">
+    <div class="grid two-col">
+      <div class="panel">
+        <h3>Details</h3>
+        <div class="field">
+          <label>Skuz Cost</label>
+          <input type="number" name="system.skuzCost" value="{{system.skuzCost}}" />
+        </div>
+        <div class="field">
+          <label>Tags</label>
+          <input type="text" name="system.tags" value="{{system.tags}}" />
+        </div>
+        <div class="field">
+          <label>Effects</label>
+          <textarea name="system.effects" rows="4">{{system.effects}}</textarea>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Description</h3>
+        <textarea name="system.description" rows="10">{{system.description}}</textarea>
+      </div>
+    </div>
+  </section>
+</form>
